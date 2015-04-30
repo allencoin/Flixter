@@ -8,7 +8,7 @@
 
 .navbar-inverse a.navbar-brand {
 	font-family: "Helvetica Neue", Helvetica;
-	font-weight: 100;
+	font-weight: 200;
 	color: white;
 }
 
@@ -67,4 +67,8 @@ body {
 .booyah-box h2, .booyah-box h1 {
 	margin:10px;
 	text-align: center;
+}
+
+.clr {
+  clear:both;
 }
