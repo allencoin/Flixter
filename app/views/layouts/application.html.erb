@@ -2,16 +2,17 @@
 <html>
 <head>
 
-  <title>Flixter</title>
+  <title>Vidiyo | d.i.y. videos</title>
   <meta name=viewport content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <div id="wrap">
-  <nav class="navbar navbar-inverse" role="navigation">
+  <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -21,7 +22,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-          <%= link_to 'Flixter', root_url, :class => 'navbar-brand' %>
+          <%= link_to root_url, :class => 'navbar-brand' do %>
+              Vi<span>diy</span>o
+          <% end %>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -30,7 +33,7 @@
           <% if user_signed_in? %>
           <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
         <% else %>
-          <li><%= link_to 'Sign in', new_user_session_path %></li>
+          <li><%= link_to 'Sign in', new_user_session_path, :class => 'btn btn-sign-in' %></li>
           <li><%= link_to 'Sign up', new_user_registration_path %></li>
         <% end %>
       </ul>

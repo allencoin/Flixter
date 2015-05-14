@@ -1,15 +1,18 @@
 .navbar {
 	border-radius:0;
-	font-family: "Helvetica Neue", Helvetica;
-	font-weight: 200;
 	box-shadow: 0px 1px 3px rgba(41, 41, 41, 0.75);
-	background: url('nav_background.png');
 }
 
-.navbar-inverse a.navbar-brand {
-	font-family: "Helvetica Neue", Helvetica;
-	font-weight: 200;
-	color: white;
+.navbar-default a.navbar-brand {
+	font-family: 'Lobster Two', cursive;
+	font-weight: 100;
+	color: #F45800;
+	font-size: 2.3em;
+	padding-left: 50px;
+}
+
+.navbar-default a.navbar-brand span {
+	color: #5E5E5E;
 }
 
 .hero {
@@ -50,6 +53,26 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	border-radius:0;
 }
 
+.btn-sign-in {
+	padding: 8px;
+	line-height: 16px;
+	font-size: 14px;
+	border: 1px solid;
+	text-decoration: none;
+	border-radius: 3px;
+	border-color: #0192B5;
+}
+
+.btn-sign-in:focus,
+.btn-sign-in:active,
+.btn-sign-in.active {
+	background-color: #ffffff;
+}
+
+.btn-sign-in:hover {
+	background-color: #ebebeb;
+}
+
 body {
 	background: url('bg.png');
 	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -74,4 +97,12 @@ body {
 
 .clr {
   clear:both;
+}
+
+.field_with_errors {
+	color: #ff3333;
+	background-color: #ffeeee;
+	border-radious: 3px;
+	padding: 8px;
+	margin: 10px;
 }
