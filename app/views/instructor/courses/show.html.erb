@@ -2,5 +2,5 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
 	<h1 class="text-center"><%= @course.title %></h1>
 	<p>Description: <%= @course.description %></p>
-	<p>Price: <strong>$<%= @course.cost %></strong></p>
+	<p>Price: <span class="label label-default"><%= number_to_currency @course.cost %></span></p>
 </div>
