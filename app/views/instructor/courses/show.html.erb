@@ -3,4 +3,19 @@
 	<h1 class="text-center"><%= @course.title %></h1>
 	<p>Description: <%= @course.description %></p>
 	<p>Price: <span class="label label-default"><%= number_to_currency @course.cost %></span></p>
+	<br />
+	<ul>
+		<% @course.sections.each do |section| %>
+			<li>
+				<%= section.title %>
+			</li>
+		<% end %>
+	</ul>
+	<br />
+	<%= link_to 'Preview as Student', course_path(@course), :class => 'btn btn-warning pull-right' %>
+	<div class="clr"></div>
+	<hr>
+	<div class="text-center">
+		<%= link_to 'Add a new section...', new_instructor_course_section_path(@course), :class => 'btn btn-primary btn-primary' %>
+	</div>
 </div>

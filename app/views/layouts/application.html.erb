@@ -2,7 +2,7 @@
 <html>
 <head>
 
-  <title>Vidiyo | d.i.y. videos</title>
+  <title>Vidiyo | d.i.y. how-to videos</title>
   <meta name=viewport content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -46,10 +46,10 @@
     </div><!-- /.container-fluid -->
   </nav>
   <% if notice.present? %>
-    <p class="alert alert-info"><%= notice %></p>
+    <p class="alert alert-info"><span class="glyphicon glyphicon-check" aria-hidden="true"></span>&nbsp;<%= notice %><a href="#" class="close" data-dismiss="alert">&times;</a></p>
   <% end %>
   <% if alert.present? %>
-    <p class="alert alert-danger"><%= alert %></p>
+    <p class="alert alert-danger"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>&nbsp;<%= alert %><a href="#" class="close" data-dismiss="alert">&times;</a></p>
 
 <% end %>
 
@@ -63,7 +63,7 @@
   <div class="container">
     <b>Ahoy Teachers!</b>
     <br />
-    <%= link_to 'Teach a Course', new_instructor_course_path %>
+    <%= link_to 'Teach a Course, Get Paid', new_instructor_course_path %>
   </div>
 </div>
 
