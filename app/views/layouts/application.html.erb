@@ -4,10 +4,13 @@
 
   <title>Vidiyo | d.i.y. how-to videos</title>
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+
+  <!--     Font Awesome     -->
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -48,17 +51,18 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+  
   <% if notice.present? %>
     <p class="alert alert-info"><span class="glyphicon glyphicon-check" aria-hidden="true"></span>&nbsp;<%= notice %><a href="#" class="close" data-dismiss="alert">&times;</a></p>
   <% end %>
   <% if alert.present? %>
     <p class="alert alert-danger"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>&nbsp;<%= alert %><a href="#" class="close" data-dismiss="alert">&times;</a></p>
-
-<% end %>
+  <% end %>
 
 <%= yield %>
 
 </div> <!--end wrap div-->
+
 
 <br class="clr" />
 
