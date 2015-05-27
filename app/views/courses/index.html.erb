@@ -10,6 +10,7 @@
 		</h2>
 		<br />
 		<div class="col-sm-8 col-xs-12">
+			<%= image_tag @course.image, :class => 'img-responsive' %>
 			<p><%= course.description %></p>
 			<p>
 				<span class="label label-default"><%= number_to_currency course.cost %>
