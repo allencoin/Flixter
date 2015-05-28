@@ -292,6 +292,10 @@ h1 .subtitle{
     background-color: #FF4C40;
     background-color: rgba(255, 76, 64, 0.98);
 }
+.navbar:not(.navbar-transparent).navbar-ct-black{
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.97);
+}
 
 .dropdown-menu > li > a {
     padding: 8px 20px;
