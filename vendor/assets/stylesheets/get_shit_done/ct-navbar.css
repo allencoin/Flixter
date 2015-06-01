@@ -275,6 +275,8 @@ h1 .subtitle{
 .navbar:not(.navbar-transparent).navbar-ct-blue{
     background-color: #34ACDC;
     background-color: rgba(52, 172, 220, 0.98);
+    background-image: url("/assets/asfalt-light.png");
+    background-repeat: repeat;
 }
 .navbar:not(.navbar-transparent).navbar-ct-azzure{
     background-color: #5BCAFF;

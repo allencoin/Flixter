@@ -51,6 +51,8 @@ gem 'mini_magick'
 
 gem "factory_girl_rails", "~> 4.0"
 
+gem 'stripe'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
