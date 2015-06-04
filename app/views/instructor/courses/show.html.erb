@@ -20,22 +20,36 @@
   <p>Description: <%= current_course.description %></p>
   <p>Price: <span class="label label-default"><%= number_to_currency current_course.cost %></span></p>
   <br />
-  <ul>
+
+  <ul class="sections">
     <% current_course.sections.each do |section| %>
-      <li>
-        <%= section.title %>
-        <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), :class => 'pull-right btn btn-primary btn-xs' %>
+      <li class="section-li">
+        <div class="header">
+          <span class="glyphicon glyphicon-list"></span>
+          <%= section.title %>
+        </div>
         <ul class="lessons">
           <% section.lessons.rank(:row_order).each do |lesson| %>
             <li data-update-url="<%= instructor_lesson_path(lesson) %>">
-            <strong><%= lesson.title %></strong>
-            -
-            <%= lesson.subtitle %>
+              <div class="col-xs-1">
+                <br />
+                <span class="glyphicon glyphicon-list"></span>
+              </div>
+              <div class="col-xs-11 text-center">
+                <p>
+                  <strong><%= lesson.title %></strong>
+                </p>
+                <p>
+                  <%= lesson.subtitle %>
+                </p>
+              </div>
+              <br class="clr" />
           </li>
           <% end %>
         </ul>
         <br class="clr" />
       </li>
+      <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), :class => 'pull-right btn btn-primary btn-xs' %>
     <% end %>
   </ul>
   <br />
