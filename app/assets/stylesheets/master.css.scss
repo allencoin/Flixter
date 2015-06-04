@@ -15,6 +15,11 @@
  }
  
 	.navbar a.navbar-brand span {color: white;}
+
+	.navbar .navbar-nav > li > a {
+		margin: 0px 3px;
+		padding: 6px 15px;
+	}
  
 .hero {
 	background: url('hero.jpg');
@@ -188,3 +193,14 @@ ul .header .glyphicon {
 	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
 	padding: 20px;
  }
+
+ @font-face {
+  font-family: 'Pe-icon-7-stroke';
+  src:font-url('Pe-icon-7-stroke.eot');
+  src:font-url('Pe-icon-7-stroke.eot?#iefix') format('embedded-opentype'),
+    font-url('Pe-icon-7-stroke.svg#Pe-icon-7-stroke') format('svg'),
+    font-url('Pe-icon-7-stroke.woff') format('woff'),
+    font-url('Pe-icon-7-stroke.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

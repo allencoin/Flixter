@@ -69,15 +69,35 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                         <% if user_signed_in? %>
-                          <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
+                          <li><%= link_to dashboard_path do %>
+                                <i class="pe-7s-id"></i>
+                                <p>My Dashboard</p>
+                              <% end %>
+                          </li>
+                          <li><%= link_to destroy_user_session_path, :method => :delete do %>
+                                <i class="pe-7s-delete-user"></i>
+                                <p>Sign out</p>
+                              <% end %>
+                          </li>
                         <% else %>
-                          <li><%= link_to 'Sign in', '#', :data => {:toggle => 'modal', :target => '#signInModal'} %></li>
-                          <li><%= link_to 'Sign up', '#', :data => {:toggle => 'modal', :target => '#signUpModal'} %></li>
+                          <li><%= link_to '#', :data => {:toggle => 'modal', :target => '#signInModal'} do %>
+                                <i class="pe-7s-angle-right-circle"></i>
+                                <p>Sign in</p>
+                              <% end %>
+                          </li>
+                          <li><%= link_to '#', :data => {:toggle => 'modal', :target => '#signUpModal'} do %>
+                                <i class="pe-7s-add-user"></i>
+                                <p>Sign up</p>
+                              <% end %>
+                          </li>
                         <% end %>
                 </ul>
                 <ul class="nav navbar-nav navbar-left">
                     <li>
-                      <%= link_to 'See All Courses', courses_path %>
+                      <%= link_to courses_path do %>
+                        <i class="pe-7s-study"></i>
+                        <p>See All Courses</p>
+                      <% end %>
                     </li>
                   </ul>
             </div><!-- /.navbar-collapse -->
