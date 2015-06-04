@@ -178,10 +178,44 @@
 
 <div id="footer">
   <div class="container">
-    <b>Ahoy Teachers!</b>
-    <br />
-    <%= link_to 'Teach a Course, Get Paid', new_instructor_course_path %>
-  </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Teachers!</b>
+        <br />
+        <%= link_to 'Teach a Course, Get Paid', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', '#' %>
+        <br />
+        <%= link_to 'Careers', '#' %>
+        <br />
+        <%= link_to 'Privacy Policy', '#' %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        allencoin@gmail.com
+        <br />
+        123 Fake Street
+        <br />
+        Cool Town, NC, 27603
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Social</b><br />
+          <a class="circle github" href="http://www.github.com">
+          <i class="fa fa-github fa-fw"></i>
+          </a>
+          <a id="google_login" class="circle google" href="http://www.google.com">
+          <i class="fa fa-google-plus fa-fw"></i>
+          </a>
+          <a id="facebook_login" class="circle facebook" href="http://www.facebook.com">
+          <i class="fa fa-facebook fa-fw"></i>
+          </a>
+      </div>
+    </div>
 </div>
 
 </body>
