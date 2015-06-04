@@ -51,10 +51,10 @@ $(document).ready(function(){
     $('.btn-tooltip').tooltip();
     $('.label-tooltip').tooltip();
     
-	// Carousel
-	$('.carousel').carousel({
-      interval: 4000
-    });
+	// // Carousel
+	// $('.carousel').carousel({
+ //      interval: 4000
+ //    });
     
     demo.initPickColor();
     
