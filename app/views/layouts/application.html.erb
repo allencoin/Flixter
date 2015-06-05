@@ -143,17 +143,17 @@
           <h4 class="modal-title" id="myModalLabel">Sign up</h4>
         </div>
         <div class="modal-body">
-          <%= simple_form_for(:registration, :url => new_user_registration_path) do |f| %>
-          <%= f.error_notification %>
+          <%= simple_form_for(:user, :url => user_registration_path) do |s| %>
+          <%= s.error_notification %>
 
           <div class="form-inputs">
-            <%= f.input :email, required: true, autofocus: true %>
-            <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable) %>
-            <%= f.input :password_confirmation, required: true %>
+            <%= s.input :email, required: true, autofocus: true %>
+            <%= s.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable) %>
+            <%= s.input :password_confirmation, required: true %>
           </div>
 
           <div class="form-actions">
-            <%= f.button :submit, "Sign up" %>
+            <%= s.button :submit, "Sign up" %>
           </div>
         <% end %>
 
